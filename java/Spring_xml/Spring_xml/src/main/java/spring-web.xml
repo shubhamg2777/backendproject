@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+<!--	<bean id="ticketBooking" class="com.gaurav.Spring_xml.BookTicket">
+	
+	
+	<property name="ticketNumber" value="A111"></property>
+	<property name="from" value="Simdega"></property>
+	<property name="to" value="Ranchi"></property>
+	
+	<constructor-arg index="0" value="Ahh12"> </constructor-arg>
+	<constructor-arg index="1" value="Simdega"> </constructor-arg>
+	<constructor-arg index="2" value="Katra"> </constructor-arg>
+	
+	</bean>
+	
+	 <bean  id="car" class="com.gaurav.Spring_xml.XmlConfig.Car">
+	<constructor-arg name="id" value="BRhh12"> </constructor-arg>
+	<constructor-arg name="cubicCapacity" value="1000"> </constructor-arg>
+	<constructor-arg name=" brand" value="Tata"> </constructor-arg>  -->
+	
+	
+	
+
+	<context:component-scan base-package="com.gaurav.Spring_xml"></context:component-scan>
+</beans>
+
+ 
+
+
+

@@ -1,0 +1,10 @@
+package com.jsp.movie.Repositry;
+
+import com.jsp.movie.entity.MovieInfo;
+
+public class MovieRepositry {
+
+public void saveMovieDetails (MovieInfo movieinfo) {
+	
+}
+}

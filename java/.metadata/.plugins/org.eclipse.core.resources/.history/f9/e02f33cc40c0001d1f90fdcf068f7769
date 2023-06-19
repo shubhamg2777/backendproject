@@ -1,0 +1,39 @@
+package com.jsp.springproject.service;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jsp.springproject.dto.LoginDto;
+import com.jsp.springproject.entity.UserEntitty;
+import com.jsp.springproject.repository.UserRepository;
+
+@Service
+public class UserService<BCryptPasswordEncoder> {
+
+	@Autowired
+	private UserRepository userrepository;
+
+	 @Autowired
+	    private BCryptPasswordEncoder passwordEncoder;
+	@Autowired
+	private ModelMapper mapper;
+
+	public void registerUser(UserEntitty entity) {
+		UserEntitty userEntity = mapper.map(entity, UserEntitty.class);
+		userrepository.registerUser(userEntity);
+	}
+
+	
+	public boolean processuserLogin(LoginDto logindto) {
+	    UserEntitty entity = userrepository.getLoginByEmail(logindto.getEmail());
+	    if (entity != null) {
+	        String encodedPassword = entity.getPassword(); // assuming password is already encoded in the database
+	        if (((String) passwordEncoder).matches(logindto.getPassword()) && logindto.getEmail().equalsIgnoreCase(entity.getEmail())) {
+	            return true;
+	        }
+	        return false;
+	    }
+	    return false;
+	}
+}

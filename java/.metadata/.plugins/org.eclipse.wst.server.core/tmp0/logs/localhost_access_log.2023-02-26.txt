@@ -1,0 +1,17 @@
+127.0.0.1 - - [26/Feb/2023:08:48:04 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:48:05 +0530] "GET /springwebsecond/WEB-INF/classes/com/jsp/springwebsecond/config/AppConfiguration.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:48:37 +0530] "GET /springwebsecond/ HTTP/1.1" 200 628
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:49:14 +0530] "GET /springwebsecond/saveUserDetails?name=shubham&email=shubhamg2777@gmail.com&contactNumber=23000&password=123&country=india&pinCode=248 HTTP/1.1" 404 786
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:49:53 +0530] "GET /springwebsecond/ HTTP/1.1" 200 628
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:49:59 +0530] "GET /springwebsecond/saveUserDetails?name=smldl&email=&contactNumber=&password=&country=&pinCode= HTTP/1.1" 404 786
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:50:48 +0530] "GET /springwebsecond/ HTTP/1.1" 200 629
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:50:54 +0530] "GET /saveUserDetails?name=wml&email=&contactNumber=&password=&country=&pinCode= HTTP/1.1" 404 766
+127.0.0.1 - - [26/Feb/2023:08:53:06 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:53:18 +0530] "GET /springwebsecond HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:53:20 +0530] "GET /springwebsecond/ HTTP/1.1" 200 628
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:53:40 +0530] "GET /springwebsecond/saveUserDetails?name=SHUBHAM+KUMAR+SINGH&email=shubhamg2777%40gmail.com&contactNumber=7009966954&password=Shu%40123&country=INDIA&pinCode=2125565 HTTP/1.1" 404 786
+127.0.0.1 - - [26/Feb/2023:08:55:24 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:55:26 +0530] "GET /springwebsecond/ HTTP/1.1" 200 628
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:08:55:36 +0530] "GET /springwebsecond/saveUserDetails?name=wwmll&email=&contactNumber=&password=&country=&pinCode= HTTP/1.1" 404 786
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:15:05:12 +0530] "GET /springwebsecond HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:15:05:12 +0530] "GET /springwebsecond/ HTTP/1.1" 404 771

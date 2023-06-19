@@ -1,0 +1,17 @@
+package com.jsp.ManyToOne.util;
+
+import java.util.Properties;
+
+public class PropertiesUtil {
+	public static Properties getConnectionProperties() {
+		Properties properties = new Properties();
+		properties.setProperty("connection.driver_class", "com.mysql.cj.jdbc.Driver");
+		properties.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/hibernate");
+		properties.setProperty("hibernate.connection.username", "root");
+		properties.setProperty("hibernate.connection.password", "java");
+		properties.setProperty("hibernate.dialect","org.hibernate.dialect.MySQL8Dialect");
+		properties.setProperty("hibernate.hbm2ddl.auto", "update");
+		properties.setProperty("hibernate.show_sql", "true");
+		return properties;
+		}
+}
